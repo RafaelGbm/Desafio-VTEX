@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "lastName": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "email": {
+      "type": "string",
+      "maxLength": 100,
+      "format": "email"
+    },
+    "interestCategory": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "optIn": {
+      "type": "boolean"
+    }
+  },
+  "v-default-fields": [
+    "firstName",
+    "lastName",
+    "email",
+    "interestCategory",
+    "optIn"
+  ],
+  "v-indexed": ["email"],
+  "required": ["firstName", "lastName", "email"],
+  "v-security": {
+    "publicWrite": [
+      "firstName",
+      "lastName",
+      "email",
+      "interestCategory",
+      "optIn"
+    ],
+    "publicRead": []
+  }
+}

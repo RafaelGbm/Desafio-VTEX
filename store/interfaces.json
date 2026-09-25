@@ -1,0 +1,11 @@
+{
+  "lead-form": {
+    "component": "LeadForm"
+  },
+  "product-name-simple": {
+    "component": "ProductNameSimple"
+  },
+  "promotion-badge": {
+    "component": "PromotionBadge"
+  }
+}

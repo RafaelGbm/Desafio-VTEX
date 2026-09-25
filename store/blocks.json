@@ -1,0 +1,107 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#lead-and-showcases"
+    ]
+  },
+  "flex-layout.row#lead-and-showcases": {
+    "children": [
+      "flex-layout.col#lead-form-wrapper",
+      "flex-layout.col#showcases-wrapper"
+    ],
+    "props": {
+      "blockClass": "leadAndShowcases"
+    }
+  },
+  "flex-layout.col#lead-form-wrapper": {
+    "children": ["lead-form"]
+  },
+  "flex-layout.col#showcases-wrapper": {
+    "children": ["tab-layout#showcases"]
+  },
+  "lead-form": {
+    "props": {}
+  },
+  "tab-layout#showcases": {
+    "children": [
+      "tab-list#showcases",
+      "tab-content#showcases"
+    ],
+    "props": {
+      "blockClass": "showcases",
+      "defaultActiveTabId": "best-sellers"
+    }
+  },
+  "tab-list#showcases": {
+    "children": [
+      "tab-list.item#best-sellers",
+      "tab-list.item#promotions",
+      "tab-list.item#new-arrivals"
+    ]
+  },
+  "tab-list.item#best-sellers": {
+    "props": {
+      "tabId": "best-sellers",
+      "label": "Mais Vendidos",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#promotions": {
+    "props": {
+      "tabId": "promotions",
+      "label": "Promoções"
+    }
+  },
+  "tab-list.item#new-arrivals": {
+    "props": {
+      "tabId": "new-arrivals",
+      "label": "Novidades"
+    }
+  },
+  "tab-content#showcases": {
+    "children": [
+      "tab-content.item#best-sellers",
+      "tab-content.item#promotions",
+      "tab-content.item#new-arrivals"
+    ]
+  },
+  "tab-content.item#best-sellers": {
+    "children": ["shelf#best-sellers"],
+    "props": {
+      "tabId": "best-sellers"
+    }
+  },
+  "tab-content.item#promotions": {
+    "children": ["shelf#promotions"],
+    "props": {
+      "tabId": "promotions"
+    }
+  },
+  "tab-content.item#new-arrivals": {
+    "children": ["shelf#new-arrivals"],
+    "props": {
+      "tabId": "new-arrivals"
+    }
+  },
+  "shelf#best-sellers": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "maxItems": 10
+    }
+  },
+  "shelf#promotions": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByBestDiscountDESC",
+      "maxItems": 10
+    }
+  },
+  "shelf#new-arrivals": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "maxItems": 10
+    }
+  }
+}

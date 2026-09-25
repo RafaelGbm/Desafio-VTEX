@@ -1,0 +1,24 @@
+{
+  "vendor": "econverse",
+  "name": "lead-challenge",
+  "version": "0.0.1",
+  "title": "Lead Challenge",
+  "description": "Desafio VTEX: LeadForm + Master Data, tab-layout com vitrines, ProductNameSimple e selo de promoção",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x"
+  },
+  "categories": [],
+  "settingsSchema": {},
+  "mustUpdateAt": "2018-01-02",
+  "dependencies": {
+    "vtex.store": "2.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.tab-layout": "0.x",
+    "vtex.shelf": "1.x",
+    "vtex.product-summary": "2.x",
+    "vtex.css-handles": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
